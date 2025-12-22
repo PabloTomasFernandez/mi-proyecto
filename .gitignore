@@ -9,3 +9,4 @@ __pycache__/
 
 # Ignorar variables de entorno (claves secretas)
 .env
+.idea/
