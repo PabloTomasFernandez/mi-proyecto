@@ -1,4 +1,4 @@
-print('*** Gerenación Ticket de Venta ***')
+print('*** Generación Ticket de Venta ***')
 
 precio_leche = float(input('Ingresa el precio de la leche: '))
 precio_pan = float(input('Ingresa el precio de la pan: '))
@@ -9,18 +9,19 @@ precio_platano = float(input('Ingresa el precio de la platano: '))
 descuento_porcentaje = int(input('Ingresa el descuento (%): '))
 
 
-# Cálculo de subtotal (Sin inpuestos)
+# Cálculo de subtotal (Sin impuestos)
 
 subtotal  = precio_leche + precio_pan + precio_lechuga + precio_platano
 
-# Amplicar descuento
+# Aplicar descuento
 descuento = subtotal * (descuento_porcentaje/100)
 
 # Subtotal con descuento
 subtotal_con_descuento = subtotal - descuento
 
-# Calculo con impuseto (21%)
-impuesto = subtotal_con_descuento * 0.21
+# Calculo con impuesto (21%)
+TASA_IMPUESTO = 0.21
+impuesto = subtotal_con_descuento * TASA_IMPUESTO
 
 # Calculo total de la compra (Con impuesto)
 costo_total_compra = subtotal_con_descuento + impuesto
